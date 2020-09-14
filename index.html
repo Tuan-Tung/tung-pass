@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  <div class="col-14 col-sm-14 col-md-7 offset-md-2
+  col-lg-7 offset-lg-2 col-xl-7 offset-xl-2 ">
+      <h1 class=" my-3 text-center text-primary" >Shopping Cart</h1>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>hình ảnh</th>
+                    <th>tên SP</th>
+                    <th>số lượng</th>
+                    <th>đơn giá</th>
+                    <th>tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="./img/samsung.jpg" width="50" height="45"></td>
+                    <td>samsung-galaxy-a51</td>
+                    <td><input type="text" onchange="tong()" id="sl_1"></td>
+                    <td>7000000</td>
+                    <td id="tien1">0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="./img/samsung.jpg" width="50" height="45"></td>
+                    <td>samsung-galaxy-a51</td>
+                    <td><input type="text" onchange="tong()" id="sl_2"></td>
+                    <td>3000000</td>
+                    <td id="tien2">0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="./img/samsung.jpg" width="50" height="45"></td>
+                    <td>samsung-galaxy-a51</td>
+                    <td><input type="text" onchange="tong()" id="sl_3"></td>
+                    <td>6000000</td>
+                    <td id="tien3">0</td>
+                </tr>
+                <tr>
+               <td style="background-color: #28a745;">tổng tiền</td>
+               <td style="background-color: #28a745;"> </td>
+               <td style="background-color: #28a745;"> </td>
+               <td style="background-color: #28a745;"> </td>
+               <td style="background-color: #28a745;"> </td>
+               <td style="background-color: #28a745;" id="sum"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+</body>
+</html>
